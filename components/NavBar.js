@@ -75,7 +75,24 @@ export default function Example() {
                 </div>
               </div>
               <div className="mt-6">
-                <nav className="grid gap-y-8"></nav>
+                <nav className="grid gap-y-8">
+                  <Link href="/">
+                    <span className="px-2 whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+                      Home
+                    </span>
+                  </Link>
+                  <Link href="/aboutme">
+                    <span className="px-2 whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+                      About me
+                    </span>
+                  </Link>
+                  <div className="px-2 whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+                    Projects
+                  </div>
+                  <div className="px-2 whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+                    Contact me
+                  </div>
+                </nav>
               </div>
             </div>
             <div className="py-6 px-5 space-y-6">
