@@ -34,12 +34,16 @@ export default function Example() {
                 About me
               </span>
             </Link>
-            <div className="px-2 whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-              Projects
-            </div>
-            <div className="px-2 whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-              Contact me
-            </div>
+            <Link href="/">
+              <span className="px-2 whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+                Projects
+              </span>
+            </Link>
+            <Link href="/contactme">
+              <span className="px-2 whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+                Contact me
+              </span>
+            </Link>
           </div>
         </div>
       </div>
@@ -86,12 +90,16 @@ export default function Example() {
                       About me
                     </span>
                   </Link>
-                  <div className="px-2 whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-                    Projects
-                  </div>
-                  <div className="px-2 whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-                    Contact me
-                  </div>
+                  <Link href="/">
+                    <span className="px-2 whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+                      Projects
+                    </span>
+                  </Link>
+                  <Link href="/contactme">
+                    <span className="px-2 whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+                      Contact me
+                    </span>
+                  </Link>
                 </nav>
               </div>
             </div>
