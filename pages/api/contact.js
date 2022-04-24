@@ -29,8 +29,8 @@ export default function contactApi(req, res) {
               error = err;
             else
             information = info;
+            res.status(200).json({ message: "Message sent", information, err });
           })
-          return res.status(200).json({ message: "Message sent" });
     } else {
         return res.status(405).json(`Method not allowed /${req.method}`);
     }
