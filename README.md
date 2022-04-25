@@ -1,29 +1,29 @@
-# Next.js + Tailwind CSS Example
+# Daniel Rivas Portfolio - danielrivasdev.co 
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This is the repository of my personal web portfolio
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+This project was made using NextJS, ReactJS, nodemailer to make sended to my email every contact message sended.
 
-## Preview
+## Change .env.local file
+To make available the nodemailer function you will need to replace the values on the .env.example file
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+## Getting started
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+# clone the repo
+$ git clone https://github.com/djra26111990/portfolio-nextjs.git
+
+# Install dependencies
+$ yarn install || npm run install
+
+#Run the project local
+$ yarn dev || npm run dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Stay in touch
+
+- LinkedIn - [Daniel Rivas](https://www.linkedin.com/in/daniel-jos%C3%A9-rivas-aguilar/)
+- GitHub - [https://github.com/djra26111990](https://github.com/djra26111990)
+- Email - [Email](mailto://djra26111990@gmail.com)
+- WhatsApp - [WhatsApp](https://api.whatsapp.com/send?phone=593959934473&text=Hola%2C%20Daniel!%20me%20gustaria%20estar%20en%20contacto%20contigo!)
+
