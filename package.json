@@ -1,5 +1,10 @@
 {
   "private": true,
+  "author": {
+    "name": "Daniel Rivas",
+    "email": "djra26111990@gmail.com"
+  },
+  "license": "NONE",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
