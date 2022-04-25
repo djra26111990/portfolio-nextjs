@@ -26,10 +26,9 @@ export default function contactApi(req, res) {
         
           transporter.sendMail(mailData, function (err, info) {
             if(err)
-              error = err;
+            res.status(500).json({ message: "An error had ocurred", code: 500, error: err });
             else
-            information = info;
-            res.status(200).json({ message: "Message sent", information, err });
+            res.status(200).json({ message: "Message sent", info });
           })
     } else {
         return res.status(405).json(`Method not allowed /${req.method}`);
