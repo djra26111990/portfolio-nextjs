@@ -2,9 +2,6 @@ import nodemailer from "nodemailer";
 
 export default function contactApi(req, res) {
     if(req.method === "POST"){
-        let error;
-        let information;
-
         const transporter = nodemailer.createTransport({
             port: parseInt(process.env.PORT, 10),
             host: process.env.HOST_SMTP,
