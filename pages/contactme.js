@@ -6,6 +6,7 @@ import * as yup from "yup";
 export default function ContactMe() {
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
   const formik = useFormik({
     initialValues: {
@@ -14,10 +15,6 @@ export default function ContactMe() {
       message: "",
     },
     onSubmit: async () => {
-      console.log(formik.values);
-      setMessage("Form submitted");
-      setSubmitted(true);
-
       const { name, email, message } = formik.values;
 
       await fetch('/api/contact', {
@@ -31,8 +28,20 @@ export default function ContactMe() {
           formik.values.email = '';
           formik.values.name = '';
           formik.values.message = '';
+          setMessage("Form submitted");
+          setSubmitted(true);
           setTimeout(() => {
             setSubmitted(false)
+          }, 2000);
+        }
+        if(res.status === 500) {
+          setMessage("An error had ocurred, please try again later");
+          setError(true);
+          formik.values.email = '';
+          formik.values.name = '';
+          formik.values.message = '';
+          setTimeout(() => {
+            setError(false)
           }, 2000);
         }
       })
@@ -74,6 +83,13 @@ export default function ContactMe() {
           <div
             hidden={!submitted}
             className="bg-blue-200 border-blue-600 text-blue-800 p-4 mb-4 border rounded"
+            role="alert"
+          >
+            {message}
+          </div>
+          <div
+            hidden={!error}
+            className="bg-red-200 border-red-600 text-red-800 p-4 mb-4 border rounded"
             role="alert"
           >
             {message}
