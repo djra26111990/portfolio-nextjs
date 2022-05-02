@@ -49,7 +49,7 @@ export default function AboutMe() {
                 </p>
                 <p className="leading-relaxed text-lg text-justify mb-4">
                   I have been using the MERN stack since 2019, and I'm always looking for new challenges to improve my skills.
-                  Also, in my free time I'm always trying to learn new things, like learning new languages, frameworks, libraries, etc.
+                  Also, in my free time I'm always trying to learn new things, like new languages, frameworks, libraries, etc.
                   I've been working with ReactJS, React Native, NodeJS, TypeScript, GraphQL, MongoDB, MySQL, PostgreSQL, etc.
                 </p>
               </div>
